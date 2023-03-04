@@ -1,3 +1,4 @@
+import { MathJax, MathJaxContext } from 'better-react-mathjax'
 import { useEffect, useState } from 'react'
 import { QuestionIds, API_BASE_URL } from '../data'
 import { Questions } from '../types'
@@ -42,8 +43,12 @@ const Question = ({
 	}
 
 	return (
-		<div className="my-8 p-4 text-center text-lg sm:p-6 lg:p-8">
-			{questionData}
+		<div className="my-8 p-4 text-center text-lg">
+			<MathJaxContext>
+				<MathJax>
+					<div dangerouslySetInnerHTML={{ __html: questionData }}></div>
+				</MathJax>
+			</MathJaxContext>
 		</div>
 	)
 }
