@@ -1,4 +1,4 @@
-type ChapterQuestion = {
+type Question = {
 	ChapterID: string
 	QuestionID: string
 	UpdateQuestion: number
@@ -43,4 +43,4 @@ type ChapterQuestion = {
 	Step8Timer: number | null
 }
 
-export type ChapterQuestions = Array<ChapterQuestion>
+export type Questions = Array<Question>

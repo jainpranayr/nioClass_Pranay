@@ -25,7 +25,7 @@ const QuestionsNavigator = ({
 	}
 
 	return (
-		<>
+		<div>
 			<div className="relative mt-6">
 				<div
 					className="absolute top-0 left-0 z-10 h-[3px] w-full bg-indigo-600"
@@ -48,7 +48,7 @@ const QuestionsNavigator = ({
 					</Button>
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }
 
